@@ -155,7 +155,7 @@ function endGame() {
   for(var i = 0 ; i< ROCKS.length;i++){
     ROCKS[i].remove()
   }
-  gameInterval = null
+  gameInterval = 0
   DODGER.removeEventListener('keydown',moveDodger);
   ROCKS=[]
   alert("YOU LOSE!")
