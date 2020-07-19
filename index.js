@@ -90,19 +90,19 @@ function createRock(x) {
      */
      
      
-    /**
-     * Originl attempt at checking for collisions
-     * for(var i = 0; i<ROCKS.length ; i++){
+    
+    //Originl attempt at checking for collisions
+    for(var i = 0; i<ROCKS.length ; i++){
       if(checkCollision(ROCKS[i])){
         endGame();
         return;
       }
       
-      */
+      
     
     
     
-    checkCollision(rock);
+    //checkCollision(rock) 
     }
      
   
