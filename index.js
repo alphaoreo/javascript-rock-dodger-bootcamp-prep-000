@@ -161,9 +161,7 @@ function endGame() {
   for(var b = 0 ; b< times;b++){
     ROCKS.unshift();
   }
-  gameInterval = setInterval(function() {
-    createRock(Math.floor(Math.random() *  (GAME_WIDTH - 20)))
-  }, 1000)
+  clearInterval(gameInterval)
   alert("YOU LOSE!")
 }
 
