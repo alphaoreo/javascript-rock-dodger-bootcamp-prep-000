@@ -157,7 +157,9 @@ function endGame() {
   }
   gameInterval = 0
   DODGER.removeEventListener('keydown',moveDodger);
-  ROCKS=[]
+  for(var i = 0 ; i< ROCKS.length;i++){
+    ROCKS.unshift();
+  }
   alert("YOU LOSE!")
 }
 
