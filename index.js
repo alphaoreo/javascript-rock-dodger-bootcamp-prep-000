@@ -100,9 +100,9 @@ function createRock(x) {
       
       */
     
-    checkCollision(rock)
-    rock.appendChild()
-       
+    
+    
+    checkCollision(rock)   
     }
      
   
