@@ -102,7 +102,7 @@ function createRock(x) {
     
     
     
-    checkCollision(rock)   
+    checkCollision(rock);
     }
      
   
