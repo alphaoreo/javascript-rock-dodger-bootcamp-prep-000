@@ -155,11 +155,14 @@ function endGame() {
   for(var i = 0 ; i< ROCKS.length;i++){
     ROCKS[i].remove()
   }
-  gameInterval = 0
+  
   DODGER.removeEventListener('keydown',moveDodger);
   for(var i = 0 ; i< ROCKS.length;i++){
     ROCKS.unshift();
   }
+  gameInterval = setInterval(function() {
+    createRock(Math.floor(Math.random() *  (GAME_WIDTH - 20)))
+  }, 1000)
   alert("YOU LOSE!")
 }
 
