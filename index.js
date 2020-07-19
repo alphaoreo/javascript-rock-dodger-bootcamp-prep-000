@@ -102,7 +102,10 @@ function createRock(x) {
     
     
     
-    checkCollision(rock)   
+    if(checkCollision(rock)){
+      endGame()
+      return;
+    }
     }
      
   
